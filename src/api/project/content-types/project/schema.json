@@ -1,0 +1,102 @@
+{
+  "kind": "collectionType",
+  "collectionName": "projects",
+  "info": {
+    "singularName": "project",
+    "pluralName": "projects",
+    "displayName": "Projects",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Thumbnail": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Media": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Description": {
+      "type": "blocks"
+    },
+    "Type": {
+      "type": "enumeration",
+      "enum": [
+        "Interactive",
+        "Static",
+        "Rnd",
+        "Music",
+        "None"
+      ]
+    },
+    "Show": {
+      "type": "boolean",
+      "default": true
+    },
+    "Year": {
+      "type": "string"
+    },
+    "Vimeo": {
+      "type": "string"
+    },
+    "Github": {
+      "type": "string"
+    },
+    "Youtube": {
+      "type": "string"
+    },
+    "Stack": {
+      "type": "string"
+    },
+    "HeroType": {
+      "type": "enumeration",
+      "enum": [
+        "Thumbnail",
+        "Youtube",
+        "Vimeo",
+        "HeroMedia",
+        "None"
+      ]
+    },
+    "Collaborators": {
+      "type": "string"
+    },
+    "HeroMedia": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Iframe": {
+      "type": "string"
+    },
+    "IsFeatured": {
+      "type": "boolean"
+    }
+  }
+}
